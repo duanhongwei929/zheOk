@@ -3,9 +3,13 @@
     margin: 0 auto;
 }
 .title{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 0.3rem;
     color: #fff;
-    background: url("../images/title-img.jpg") no-repeat;
+    text-align: center;
+    background: url("../images/title-img.jpg") center bottom no-repeat;
+    line-height: 0.7rem;
 }
 
 
