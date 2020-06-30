@@ -85,14 +85,17 @@
 }
 .technology-font{
     color: #fff;
-}
-.technology-font{
-    padding-left: 50px;
+    margin-left: 0.15rem;
 }
 .technology-font li{
     list-style:decimal !important;
 }
-
+.technology-box{
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
