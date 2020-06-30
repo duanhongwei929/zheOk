@@ -2,6 +2,7 @@
 document.write('<!-----------  公共js和css ----------->');
 document.write('' +
 
+    '<link rel="stylesheet" type="text/css" href="css/public.css"/>\n' +
     '<link rel="stylesheet" type="text/css" href="css/duan.css"/>\n' +
     '<link rel="stylesheet" type="text/css" href="css/reset.css"/>\n' +
     '<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>\n' +

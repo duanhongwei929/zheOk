@@ -1,55 +1,4 @@
-.content{
-    width: 12rem;
-    margin: 0 auto;
-}
-.title{
-    font-size: 0.3rem;
-    color: #fff;
-    background: url("../images/title-img.jpg") no-repeat;
-}
 
-
-
-/*----------------------------*/
-.nav{
-    height: 0.8rem;
-    background: #0a112b;
-}
-.nav-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav .logo{
-    width: 40%;
-    display: flex;
-    align-items: center;
-}
-.nav .phone{
-    width: 10%;
-    color: #fff;
-    padding-left: 0.3rem;
-    background: url("../images/phone.png") no-repeat;
-    background-size: 0.2rem;
-}
-.nav ul{
-    width: 50%;
-    height: 0.8rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #fff;
-}
-.nav li{
-    cursor: pointer;
-}
-.nav li.choose{
-    height: 0.6rem;
-    line-height: 0.6rem;
-    font-size: 0.18rem;
-    border-bottom:3px solid #fff;
-    cursor: pointer;
-}
 /*---------------------------------*/
 .banner{
     width:100%;
@@ -81,11 +30,12 @@
     color: #fff;
     height: 8.6rem;
     background: url("../images/jszc.jpg") no-repeat;
-
+    padding-right: 1rem;
 }
 .technology-font{
     color: #fff;
-    margin-left: 0.15rem;
+    width: 50%;
+    margin-left: 0.3rem;
 }
 .technology-font li{
     list-style:decimal !important;
