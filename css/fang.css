@@ -1,0 +1,62 @@
+.banner{
+	width: 100%;
+	height: 4.03rem;
+	background: url(../images/fang_img/mobile_banner.jpg) no-repeat;
+	background-position:center ; 
+}
+.pageMain{
+	height: 5.4rem;
+	width: 12rem;
+	margin: 0px auto;
+	
+}
+.pageMainTitle{
+	width: 100%;
+	font-size: 0.3rem;
+	color: #09122b;
+	text-align: center;
+	margin-top: 0.65rem;
+}
+.pageMainTitle>:first-child{
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.05rem;
+}
+.pageMainTitle>:last-child{
+	width: 0.34rem;
+	height: 0.03rem;
+	background: #00f8ff;
+	letter-spacing: 0.05rem;
+	margin: 0px auto;
+	margin-top: 0.2rem;
+}
+.pageMainText{
+	width: 1.62rem;
+	height: 2.5rem;
+	margin-top: 1rem;
+}
+.pageMainText>p{
+	width: 100%;
+	text-align: center;
+	margin-top: 0.18rem;
+}
+.pageMainText>:first-child>img{
+	transform: scale(1.2);
+}
+.pageMainText>:first-child+p{
+	font-size: 0.2rem;
+}
+.pageMainText>:last-child{
+	color: #666666;
+}
+.allText{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.ZzZy{
+	width: 100%;
+	height: 8.55rem;
+	background: url(../images/fang_img/ZzZy.jpg) no-repeat;
+	background-position: center;
+}
