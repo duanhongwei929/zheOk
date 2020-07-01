@@ -12,4 +12,5 @@ document.write('' +
     '<script src="js/swiper.min.js"></script>\n' +
     '<script src="js/vue.min.js"></script>\n' +
     '<script src="js/axios.min.js"></script>\n' +
+    '<script src="js/jquery-1.8.2.min.js"></script>\n' +
     '');
