@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>移动应用</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/fang.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/fang.css" />
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/phone.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -20,28 +20,87 @@
 			</div>
 			<div class="allText">
 				<div class="pageMainText">
-					<p><img src="images/fang_img/apple.png" ></p>
+					<p><img src="images/fang_img/apple.png"></p>
 					<p>IOS开发</p>
 					<p>专注于高端型iOS系统开发，为各行业企业开发兼备实用性和营销型的APP应用软件。</p>
 				</div>
 				<div class="pageMainText">
-					<p><img src="images/fang_img/android.png" ></p>
+					<p><img src="images/fang_img/android.png"></p>
 					<p>Android开发</p>
 					<p>专研Android手机软件开发，丰富的项目开发经验为您解决Android设备型号繁杂及兼容。</p>
 				</div>
 				<div class="pageMainText">
-					<p><img src="images/fang_img/wx.png" ></p>
+					<p><img src="images/fang_img/wx.png"></p>
 					<p>微信开发</p>
 					<p>提供专业的微信小程序开发、微信公众号二次开发以及微商城网站专属定制开发的服务。</p>
 				</div>
 				<div class="pageMainText">
-					<p><img src="images/fang_img/apple.png" ></p>
+					<p><img src="images/fang_img/apple.png"></p>
 					<p>WebApp开发</p>
 					<p>Web开发标准化，能开发兼容性非常好的移动应用适用于包括iOS、Android在内的所有平台。</p>
 				</div>
 			</div>
 		</div>
-		<div class="ZzZy"></div>
+		<div class="ZzZy">
+			<div class="pageMainTitle">
+				<p>专注 专业 值得信赖</p>
+				<p></p>
+			</div>
+			<div class="ZzZyBox">
+				<div class="left ">
+					<p><img src="images/fang_img/zuo1.png"></p>
+					<p><img src="images/fang_img/zuo2.png"></p>
+					<p><img src="images/fang_img/zuo3.png"></p>
+					<p><img src="images/fang_img/zuo4.png"></p>
+					<p><img src="images/fang_img/zuo5.png"></p>
+				</div>
+				<div class="middle">
+					<a><img src="images/fang_img/phoneM.png"></a>
+				</div>
+				<div class="right">
+					<p><img src="images/fang_img/you1.png"></p>
+					<p><img src="images/fang_img/you2.png"></p>
+					<p><img src="images/fang_img/you3.png"></p>
+					<p><img src="images/fang_img/you4.png"></p>
+					<p><img src="images/fang_img/you5.png"></p>
+				</div>
+			</div>
+		</div>
+		<div class="advantage">
+			<div class="advantageText">
+				<p>我们的优势</p>
+				<div class="allList">
+					<p><span>img</span>产品与视觉设计</p>
+					<p>经验丰富的产品经理与视觉设计师为您呈现出色的产品设计</p>
+				</div>
+				<div class="allList">
+					<p><span>img</span>产品性能</p>
+					<p>我们应用行业成熟的技术与规范，出色的工程师为您的产品护航。</p>
+				</div>
+				<div class="allList">
+					<p><span>img</span>产品性能</p>
+					<p>我们应用行业成熟的技术与规范，出色的工程师为您的产品护航。</p>
+				</div>
+			</div>
+		</div>
+		<div class="kflcApp"></div>
 	</body>
-</html>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var a, b, c;
+			a = $(window).height();
+			$(window).scroll(function() {
+				var b = $(this).scrollTop();
+				$(".ZzZyBox div p").each(function() {
+					c = $(this).offset().top;
+					if (a + b > c) {
+						$(this).addClass("move");
+					} else {
+						$(this).removeClass("move");
+					}
+				});
+			});
 
+		});
+	</script>
+</html>
