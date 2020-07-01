@@ -16,7 +16,11 @@
 /*----------------------------*/
 .nav{
     height: 0.8rem;
-    background: #0a112b;
+    background: rgba(10,17,43,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 .nav-box{
     display: flex;
