@@ -5,102 +5,123 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     background: none;
     text-decoration: none;
 }
-.m-width{
+
+.m-width {
     width: 100%;
 }
+
 .two {
     background-color: #09122b;
     position: relative;
 }
+
 .twoB {
     position: relative;
     left: -94px;
 }
+
 .twoT {
     position: absolute;
     top: 50px;
     left: 500px;
 }
+
 .two .twoTitle {
     display: inline-block;
     text-align: right;
     margin-bottom: 24px;
 }
+
 .two .twoText {
     position: relative;
     right: -438px;
 }
+
 .two .borderL {
     width: 16px;
-    border: 1px solid rgb(0,248,255);
+    border: 1px solid rgb(0, 248, 255);
     position: relative;
     left: 88px;
 }
+
 .two .center {
     position: absolute;
     top: 116px;
     left: 38px;
     font-size: 28px;
-    color: rgb(9,18,43);
+    color: rgb(9, 18, 43);
     margin-left: 42px;
 }
+
 .two .text {
     font-size: 16px;
     width: 682px;
     letter-spacing: 2px;
     line-height: 28px;
 }
+
 .three {
     background-color: #fff;
 }
+
 .three .topCase {
-    background-color: rgb(248,248,248);
+    background-color: rgb(248, 248, 248);
     padding-top: 120px;
     margin-bottom: 30px;
 }
+
 .flexBox {
     display: flex;
     justify-content: space-between;
 }
+
 .three .threeText {
     margin-left: 10px;
     margin-bottom: 56px;
     margin-top: 20px;
 }
+
 .three .titles {
     font-size: 34px;
     display: inline-block;
 }
+
 .three .text {
     display: inline-block;
     margin-left: 360px;
 }
+
 .three .center {
     letter-spacing: 2px;
     line-height: 28px;
     width: 522px;
 }
+
 .three .borderL {
     width: 22px;
-    border: 1px solid rgb(0,248,255);
+    border: 1px solid rgb(0, 248, 255);
     margin-right: 15px;
     margin-bottom: 30px;
 }
+
 .m20 {
     margin: 0 20px;
 }
+
 .three .maxImg {
     width: 800px;
     height: 410px;
     display: inline-block;
     overflow: hidden;
 }
+
 .maxShow .titles {
     position: relative;
     display: inline-block;
     top: -30px;
     left: 30px;
 }
+
 .maxShow .titles .caseText {
     font-size: 20px;
     color: #fff;
@@ -109,25 +130,31 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     left: 49%;
     transform: translateX(-50%);
 }
+
 .three .maxShow {
     position: relative;
     left: -34px;
     display: flex;
     margin-right: 107px;
 }
+
 .maxShow .btn {
     margin-top: 190px;
 }
+
 .maxShow img {
     flex-shrink: 0;
 }
+
 .flexSB {
     display: flex;
     justify-content: space-between;
 }
+
 .three .minImg {
     display: flex;
 }
+
 .three .case {
     width: 18%;
     /*height: 230px;*/
@@ -135,9 +162,11 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     overflow: hidden;
     box-sizing: border-box;
 }
+
 .three .case img {
     flex-shrink: 0;
 }
+
 .three .case > span {
     font-size: 22px;
     color: #fff;
@@ -147,6 +176,7 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     left: 50%;
     margin-left: -42px;
 }
+
 .case .mb {
     width: 100%;
     height: 100%;
@@ -155,6 +185,176 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
+
 .active {
-    border: 3px solid rgb(0,248,255);
+    border: 3px solid rgb(0, 248, 255);
+}
+
+.app {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .twoB {
+        display: none;
+    }
+
+    .twoT {
+        position: static;
+    }
+
+    .twoT > img {
+        display: none;
+    }
+
+    .two .twoText {
+        position: relative;
+        left: 1.7rem;
+    }
+
+    .twoText > img {
+        display: none;
+    }
+
+    .two .center {
+        position: relative;
+        top: 0;
+        left: -83px;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-left: 0;
+        background: url(../../images/ljjImg/twoRB.png) no-repeat 100%;
+        box-sizing: border-box;
+    }
+
+    .two .twoTitle {
+        display: inline-block;
+        text-align: right;
+        margin-bottom: 22px;
+    }
+
+    .two .borderL {
+        left: 58px;
+    }
+
+    .two .text {
+        font-size: 14px;
+        width: 100%;
+        letter-spacing: 2px;
+        line-height: 24px;
+    }
+
+    .three .topCase {
+        background-color: rgb(248, 248, 248);
+        padding-top: 20px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .three .center {
+        letter-spacing: 2px;
+        line-height: 22px;
+        padding: 0 9px 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .maxShow .btn {
+        margin-top: 0;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        background: #ffffffd9;
+        padding: 2px;
+        box-sizing: border-box;
+    }
+
+    .maxShow .btn > img {
+        height: 30px;
+    }
+    .maxShow .rightBtn {
+        right: 0;
+    }
+    .three .borderL {
+        margin-bottom: 10px;
+    }
+
+    .three .titles {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 0;
+    }
+    .three .titles > img {
+        width: 3rem;
+    }
+    .maxShow .titles .caseText {
+        font-size: 18px;
+        top: 6px;
+    }
+    .three .threeText {
+        width: 5rem;
+        margin-left: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .three .text {
+        display: inline-block;
+        margin-left: .1rem;
+    }
+
+    .three .maxShow {
+        position: relative;
+        left: 0;
+        display: flex;
+        margin-right: 0;
+    }
+
+    .three .maxImg {
+        width: 100%;
+        height: 4rem;
+    }
+
+    .m20 {
+        margin: 0;
+    }
+
+    .five > img {
+        display: none;
+    }
+
+    .industry-btm {
+        width: 90%;
+    }
+
+    .app {
+        display: block;
+    }
+
+    .industry-fw {
+        font-size: 0.36rem;
+        color: #000000;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-top: 0.7rem;
+    }
+
+    .industry-fwM {
+        font-size: 0.36rem;
+        color: #c3c7d1;
+        letter-spacing: 5px;
+        text-align: center;
+        margin-top: 0.1rem;
+    }
+
+    .industry-img {
+        height: 450px;
+        margin-top: 50px;
+    }
+
+    .industry-btm {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
 }

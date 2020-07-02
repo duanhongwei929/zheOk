@@ -64,8 +64,8 @@
                         <img src="./images/ljjImg/threeTitle.png" alt="">
                     </div>
                 </div>
-                <div class="btn">
-                    <img src="./images/ljjImg/right.png" class="rightBtn">
+                <div class="btn rightBtn">
+                    <img src="./images/ljjImg/right.png" class="">
                 </div>
             </div>
         </div>
@@ -90,8 +90,13 @@
     <div>
         <img src="./images/ljjImg/four.png" class="m-width">
     </div>
-    <div>
+    <div class="five">
         <img src="./images/ljjImg/five.png" class="m-width">
+        <div class="app">
+            <h1 class="industry-fw">服务流程</h1>
+            <p class="industry-fwM">Service process</p>
+            <img class="industry-btm" src="images/industry-btm.png" >
+        </div>
     </div>
 </div>
 <script src="footer.js"></script>
@@ -124,32 +129,33 @@
         } else if (a == './images/ljjImg/c5.png') {
             $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c4.png');
             $('.minImg')[0].children[3].className = 'case active';
-            $('.caseText').text('HTML5响应式');
+            $('.caseText').text('响应式');
         }
     });
     $('.rightBtn').click(function () {
         let a = $('.maxShow .m20 .maxImg>img').attr('src');
+        console.log(a);
         $('.minImg>li').removeClass('active');
         if (a == './images/ljjImg/c1.png') {
             $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c2.png');
             $('.minImg')[0].children[1].className = 'case active';
-            $('.caseText').text('集团站群');
+            $('.caseText').text('品牌官网');
         } else if (a == './images/ljjImg/c2.png') {
             $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c3.png');
             $('.minImg')[0].children[2].className = 'case active';
-            $('.caseText').text('网站设计');
+            $('.caseText').text('行业门户');
         } else if (a == './images/ljjImg/c3.png') {
             $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c4.png');
             $('.minImg')[0].children[3].className = 'case active';
-            $('.caseText').text('品牌官网');
+            $('.caseText').text('响应式');
         } else if (a == './images/ljjImg/c4.png') {
             $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c5.png');
             $('.minImg')[0].children[4].className = 'case active';
-            $('.caseText').text('行业门户');
+            $('.caseText').text('集团站群');
         } else if (a == './images/ljjImg/c5.png') {
             $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c1.png');
             $('.minImg')[0].children[0].className = 'case active';
-            $('.caseText').text('HTML5响应式');
+            $('.caseText').text('网站设计');
         }
     })
 </script>
