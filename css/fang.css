@@ -335,3 +335,52 @@
 	background: url(../images/fang_img/endPage.jpg) no-repeat;
 	background-position: center;
 }
+@media screen and (max-width: 768px){
+	.pageMain{
+		width: 100%;
+	}
+	.pageMainText>:last-child{
+		display: none;
+	}
+	.ZzZyBox{
+		width: 100%;
+	}
+	
+	.advantageText{
+		width: 100%;
+		display: block;
+		margin-left: 0;
+	}
+	.allList>:first-child{
+		font-size: 0.28rem;
+		padding-bottom: 0.2rem;
+	}
+	.advantageText>.allList{
+		width: 85%;
+		margin: 0px auto;
+		padding-bottom: 0.5rem;
+	}
+	.allList>:last-child{
+		font-size: 0.25rem;
+	}
+	.advantageText>:first-child{
+		text-align: center;
+	}
+	.pageMain {
+		height: 3.4rem;
+	}
+	.ZzZyBox{
+		display: block;
+		text-align: center;
+	}
+	.middle img{
+		width: 100%;
+	}
+	.ZzZy{
+		height: auto;
+		background-size:cover ;
+	}
+	.kflcApp{
+	background-size:cover ;	
+	}
+}
