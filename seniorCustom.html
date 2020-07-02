@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高端定制</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/phone.js"></script>
+    <link rel="stylesheet" href="css/ljjCss/seniorCustom.css">
+</head>
+<body>
+<div>
+    <div>
+        <img src="./images/ljjImg/one.png" class="m-width">
+    </div>
+    <div class="two">
+        <img src="./images/ljjImg/twoB.png" class="twoB">
+        <div class="twoT">
+            <img src="./images/ljjImg/twoText1.png" alt="">
+            <div class="twoText">
+                <img src="./images/ljjImg/twoRB.png" alt="">
+                <div class="center">
+                    <div class="clearfix twoTitle">
+                        网站设计
+                        <div class="borderL"></div>
+                    </div>
+                    <div class="text">
+                        在建设中运用多媒体交互技术对企业品牌进行展示演绎，以此更好的展现品牌的特色和形象。相应的网站整体在提供良好用户体验的基础上偏向于设计，更多的以独特创意的视觉效果强调品牌的特色，在此基础上提升品牌的影响力和营销力。品牌形象展示网站开发是以品牌的发展方向为核心构建，此类网站建设是以传播企业及品牌形象为主要目的，在整体实施过程当中，要根据原有的品牌价值核心与网络媒体的展现方式结合起来。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="three">
+        <div class="flexBox topCase">
+            <div>
+                <img src="./images/ljjImg/threeText.png" class="threeText">
+                <div class="text clearfix">
+                    <div class="title">
+                        <div class="caseText">品牌官网</div>
+                        <div class="borderL fr"></div>
+                    </div>
+                    <div class="center">
+                        企业品牌展示站以及门户、功能性平台，互联网把企业驰入了全球信息高速公路，企业通过互联网在全世界发布最新的商业信息供全球检索
+                        以此来宣传自己的企业，宣传企业的产品，宣传企业的服务，全面展示企业形象，并且通过互联网寻找客户和货源一个好的品牌官网是企业形象的最好宣传册。
+                    </div>
+                </div>
+            </div>
+            <div class="maxShow">
+                <div class="btn">
+                    <img src="./images/ljjImg/left.png" class="leftBtn">
+                </div>
+                <div class="m20">
+                    <div class="maxImg">
+                        <img src="./images/ljjImg/c2.png" class="m-width">
+                    </div>
+                    <div class="title">
+                        <div class="caseText">品牌官网</div>
+                        <img src="./images/ljjImg/threeTitle.png" alt="">
+                    </div>
+                </div>
+                <div class="btn">
+                    <img src="./images/ljjImg/right.png" class="rightBtn">
+                </div>
+            </div>
+        </div>
+        <ul class="minImg flexSB">
+            <li class="case" title="网站设计" value="./images/ljjImg/c1.png">
+                <img src="./images/ljjImg/case1.png" class="m-width caseImg">
+            </li>
+            <li class="case active" title="品牌官网" value="./images/ljjImg/c2.png">
+                <img src="./images/ljjImg/case2.png" class="m-width caseImg">
+            </li>
+            <li class="case" title="行业门户" value="./images/ljjImg/c3.png">
+                <img src="./images/ljjImg/case3.png" class="m-width caseImg">
+            </li>
+            <li class="case" title="HTML5响应式" value="./images/ljjImg/c4.png">
+                <img src="./images/ljjImg/case4.png" class="m-width caseImg">
+            </li>
+            <li class="case" title="集团站群" value="./images/ljjImg/c5.png">
+                <img src="./images/ljjImg/case5.png" class="m-width caseImg">
+            </li>
+        </ul>
+    </div>
+    <div>
+        <img src="./images/ljjImg/four.png" class="m-width">
+    </div>
+    <div>
+        <img src="./images/ljjImg/five.png" class="m-width">
+    </div>
+</div>
+<script>
+
+    $('.minImg>li').click(function (e) {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.caseText').text($(this).attr('title'));
+        $('.maxShow .m20 .maxImg>img').attr('src', $(this).attr('value'));
+    });
+    $('.leftBtn').click(function () {
+        let a = $('.maxShow .m20 .maxImg>img').attr('src');
+        $('.minImg>li').removeClass('active');
+        if (a == './images/ljjImg/c1.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c5.png');
+            $('.minImg')[0].children[4].className = 'case active';
+            $('.caseText').text('集团站群');
+        } else if (a == './images/ljjImg/c2.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c1.png');
+            $('.minImg')[0].children[0].className = 'case active';
+            $('.caseText').text('网站设计');
+        } else if (a == './images/ljjImg/c3.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c2.png');
+            $('.minImg')[0].children[1].className = 'case active';
+            $('.caseText').text('品牌官网');
+        } else if (a == './images/ljjImg/c4.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c3.png');
+            $('.minImg')[0].children[2].className = 'case active';
+            $('.caseText').text('行业门户');
+        } else if (a == './images/ljjImg/c5.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c4.png');
+            $('.minImg')[0].children[3].className = 'case active';
+            $('.caseText').text('HTML5响应式');
+        }
+    });
+    $('.rightBtn').click(function () {
+        let a = $('.maxShow .m20 .maxImg>img').attr('src');
+        $('.minImg>li').removeClass('active');
+        if (a == './images/ljjImg/c1.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c2.png');
+            $('.minImg')[0].children[1].className = 'case active';
+            $('.caseText').text('集团站群');
+        } else if (a == './images/ljjImg/c2.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c3.png');
+            $('.minImg')[0].children[2].className = 'case active';
+            $('.caseText').text('网站设计');
+        } else if (a == './images/ljjImg/c3.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c4.png');
+            $('.minImg')[0].children[3].className = 'case active';
+            $('.caseText').text('品牌官网');
+        } else if (a == './images/ljjImg/c4.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c5.png');
+            $('.minImg')[0].children[4].className = 'case active';
+            $('.caseText').text('行业门户');
+        } else if (a == './images/ljjImg/c5.png') {
+            $('.maxShow .m20 .maxImg>img').attr('src', './images/ljjImg/c1.png');
+            $('.minImg')[0].children[0].className = 'case active';
+            $('.caseText').text('HTML5响应式');
+        }
+    })
+</script>
+</body>
+</html>
