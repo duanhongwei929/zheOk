@@ -150,7 +150,136 @@
 	width: 55%;
 	margin-bottom: 0.7rem;
 }
-@media screen and (max-width: 700px){
+/* 行业方案 */
+.industry-nav{
+	height: 1rem;
+	position: relative;
+	top: -0.5rem;
+	box-shadow: 0 0 5px #DDDDDD;
+	border-radius: 5px;
+	background: #FFFFFF;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.industry-list{
+	width: 1.3rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	box-shadow: 0 0 8px #b3b2b2;
+	color: #666666;
+	font-size: 0.18rem;
+	text-align: center;
+	border-radius: 1px;
+}
+.industry-nav .active{
+	background: #0092cc;
+	color: #FFFFFF;
+}
+.industry-w{
+	width: 100%;
+	background: #0a112b;
+	color: #FFFFFF;
+}
+.industry-box{
+	padding: 0.8rem 0 0.6rem 0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.industry-txt{
+	width: 4.55rem;
+	font-size: 0.18rem;
+}
+.industry-txt p{
+	padding: 0.1rem 0;
+}
+.industry-tit{
+	font-size: 0.36rem;
+	margin-bottom: 0.2rem;
+	padding: 0;
+}
+.industry-scheme{
+	display: inline-block;
+	font-size: 0.36rem;
+	margin-top: 0.8rem;
+	position: relative;
+}
+.industry-scheme:after{
+	content: '';
+	width: 50%;
+	height: 3px;
+	background: #00f8ff;
+	position: absolute;
+	right: 0;
+	bottom: -5px;
+}
+.industry-txt a{
+	display: inline-block;
+	width: 1.7rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.18rem;
+	background: #0092cc;
+	border-radius: 0.44rem;
+}
+.industry-fw{
+	font-size: 0.36rem;
+	color: #000000;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-top: 0.7rem;
+}
+.industry-fwM{
+	font-size: 0.36rem;
+	color: #c3c7d1;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.industry-img{
+	height: 450px;
+	margin-top: 50px;
+}
+.industry-btm{
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+}	
+.goTop{
+	position: fixed;
+	right: 30px;
+	bottom: 100px;
+	z-index: 99;
+	width: 50px;
+	cursor: pointer;
+}
+
+/* banner */
+.industry-banner{
+	background-image: url(../images/industry-banner.png);
+}
+.about-banner{
+	background-image: url(../images/about-banner.png);
+}
+.qBanner{
+	height: 4rem;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
 	.pc-width{
 		width: 100%;
 	}
@@ -177,5 +306,30 @@
 	.relation-l,.relation-r{
 		width: 90%;
 		margin-left: 5%;
+	}
+	.industry-nav{
+		height: 2rem;
+		flex-wrap:wrap;
+	}
+	.industry-list{
+		width: 1.7rem;
+	}
+	.industry-txt{
+		width: 100%;
+		padding: 0 5%;
+		box-sizing: border-box;
+	}
+	.industry-txt img{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.industry-img{
+		display: none;
+	}
+	.industry-btm{
+		width: 90%;
+	}
+	.goTop{
+		display: none !important;
 	}
 }

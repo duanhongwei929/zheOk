@@ -17,6 +17,9 @@ document.writeln("        </div>");
 document.writeln("    </div>");
 document.writeln("</div>");
 document.writeln("");
+document.write("<div class=\"phoneFoot\">");
+document.write("	Copyright © 2015.haoow.com 	<br> All rights reserved.北京哲欧凯科技有限公司");
+document.write("<\/div>");
 
 /*---- 备份 -----*/
 /*
