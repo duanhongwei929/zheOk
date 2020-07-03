@@ -110,6 +110,9 @@
 	.nav,.footer{
 		display: none;
 	}
+	.phoneFoot{
+		display: block;
+	}
 	body{
 		padding-top: 55px;
 	}
