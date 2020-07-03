@@ -1,7 +1,7 @@
 document.writeln("<div class=\'nav\'>");
 document.writeln("    <div class=\'content nav-box\'>");
 document.writeln("        <div class=\'logo\'>");
-document.writeln("            <img src=\'images/logo.png\' alt=\'\'>");
+document.writeln("            <a href=\'index.html\'><img src=\'images/logo.png\' alt=\'\'></a>");
 document.writeln("        </div>");
 document.writeln("        <ul>");
 document.writeln("            <li class=\'choose\'><a href='index.html'>首页</a></li>");
