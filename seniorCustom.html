@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="maxShow">
-                <div class="btn">
+                <div class="btn" onclick="leftBtn()">
                     <img src="./images/ljjImg/left.png" class="leftBtn">
                 </div>
                 <div class="m20">
@@ -64,7 +64,7 @@
                         <img src="./images/ljjImg/threeTitle.png" alt="">
                     </div>
                 </div>
-                <div class="btn rightBtn">
+                <div class="btn rightBtn" onclick="rightBtn()">
                     <img src="./images/ljjImg/right.png" class="">
                 </div>
             </div>
@@ -95,7 +95,7 @@
         <div class="app">
             <h1 class="industry-fw">服务流程</h1>
             <p class="industry-fwM">Service process</p>
-            <img class="industry-btm" src="images/industry-btm.png" >
+            <img class="industry-btm" src="images/industry-btm.png">
         </div>
     </div>
 </div>
@@ -107,7 +107,7 @@
         $('.caseText').text($(this).attr('title'));
         $('.maxShow .m20 .maxImg>img').attr('src', $(this).attr('value'));
     });
-    $('.leftBtn').click(function () {
+    function leftBtn() {
         let a = $('.maxShow .m20 .maxImg>img').attr('src');
         $('.minImg>li').removeClass('active');
         if (a == './images/ljjImg/c1.png') {
@@ -131,8 +131,8 @@
             $('.minImg')[0].children[3].className = 'case active';
             $('.caseText').text('响应式');
         }
-    });
-    $('.rightBtn').click(function () {
+    };
+    function rightBtn() {
         let a = $('.maxShow .m20 .maxImg>img').attr('src');
         console.log(a);
         $('.minImg>li').removeClass('active');
@@ -157,7 +157,32 @@
             $('.minImg')[0].children[0].className = 'case active';
             $('.caseText').text('网站设计');
         }
-    })
+    };
+    $('.maxImg').on('touchstart', function (e) {
+        var touch = e.originalEvent,
+            startX = touch.changedTouches[0].pageX;
+        startY = touch.changedTouches[0].pageY;
+        $('.maxImg').on('touchmove', function (e) {
+            touch = e.originalEvent.touches[0] ||
+                e.originalEvent.changedTouches[0];
+            if (touch.pageX - startX > 10) {
+                // console.log("右划");
+                leftBtn();
+                $('.maxImg').off('touchmove');
+            } else if (touch.pageX - startX < -10) {
+                // console.log("左划");
+                rightBtn();
+                $('.maxImg').off('touchmove');
+            }
+        });
+
+        // Return false to prevent image
+        // highlighting on Android
+        return false;
+
+    }).on('touchend', function () {
+        $('maxImg').off('touchmove');
+    });
 </script>
 </body>
 </html>
