@@ -119,7 +119,7 @@
 					<p>06 敏捷开发</p>
 					<p>每周迭代功能，核对开发进度</p>
 				</div>
-
+				
 				<div class="kflc_main">
 					<p><img src="images/fang_img/mobile7.png" ></p>
 					<p>07 集成测试</p>
@@ -130,7 +130,7 @@
 					<p>08 验收上线</p>
 					<p>系统上线</p>
 				</div>
-
+				
 				<div class="kflc_main">
 					<p><img src="images/fang_img/mobile9.png" ></p>
 					<p>09 运营分析</p>
@@ -145,5 +145,22 @@
 		</div>
 	<script src="footer.js" type="text/javascript" charset="utf-8"></script>
 	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var a, b, c;
+			a = $(window).height();
+			$(window).scroll(function() {
+				var b = $(this).scrollTop();
+				$(".ZzZyBox div p").each(function() {
+					c = $(this).offset().top;
+					if (a + b > c) {
+						$(this).addClass("move");
+					} else {
+						$(this).removeClass("move");
+					}
+				});
+			});
 
+		});
+	</script>
 </html>
