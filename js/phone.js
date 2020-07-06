@@ -6,7 +6,11 @@
 		dpr = 1,
 		scale = 1 / dpr,
 		resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize';
-	docEl.dataset.dpr = dpr;
+	if (docEl.dataset) {
+		docEl.dataset.dpr = dpr;
+	} else {
+		dpr = 1
+	}
 	var metaEl = doc.createElement('meta');
 	metaEl.name = 'viewport';
 	metaEl.content = 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale;
