@@ -349,20 +349,31 @@
 .lastImg li:hover{ animation:bounce 1s; }
 
 .display-none{ display: none; }
+.bannerBox2{display: none;}
 @media screen and (max-width: 768px){
-    /*.bannerBox{ display: none;}*/
+    .banner .font p{
+        line-height: 26px;
+    }
+    .bannerBox{ background: none;}
+    .bannerBox1{ display: none;}
+    .bannerBox2{display: block;}
     .content{ width: 90%;margin: 0 5%;}
     .banner{ height: 12.5rem; }
-    .banner .font-img{flex-wrap: wrap;margin-top: 1rem;}
+    .banner .font-img{ width: 80%; margin: 1rem 10% 0; flex-wrap: wrap;margin-top: 1rem;}
     .banner .font-img img{ width: 130px;}
     .banner .font-img img:nth-child(1),.banner .font-img img:nth-child(2){margin-bottom: 1rem;}
-    .technology{padding-right: 0;height: 12.6rem;}
+    .technology{padding-right: 0;height: 11.6rem;}
     .technology-box{ padding-left: 0; flex-wrap: wrap;}
+    .technology-font li{line-height: 26px;}
     .technology-box h1{ display: none;}
     .technology-box img{width: 100%; margin-top: 1rem;}
     .technology-font{ width: 90%; margin:0 5%;}
     .technology-box>div{margin-left: 0.5rem !important;}
     .serverBox .bottom{ width: 100%; position: absolute; top: 140px; text-align: center; margin-left: 0; left: 0}
+/*    .serverBox .bottom img{
+        margin-right: 0!important;
+        width: 90%;
+    }*/
     .aboutMe{ height:100%; padding-bottom: 1rem;}
     .aboutMe .font-img{flex-wrap: wrap;}
     .aboutMe .font-img img{width: 2rem}
