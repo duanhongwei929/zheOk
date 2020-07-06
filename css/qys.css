@@ -25,11 +25,11 @@
 	line-height: 0.98rem;
 	text-align: center;
 	margin: 0 auto;
+	cursor: pointer;
 }
 .type-img img{
 	max-width: 60%;
 	vertical-align: middle;
-	cursor: pointer;
 }
 .type-list h1{
 	font-size: 0.3rem;
@@ -111,16 +111,7 @@
 	margin-top: 0.25rem;
 }
 .usList a{
-	display: block;
-	text-align: center;
-	width: 1.4rem;
-	height: 0.5rem;
-	line-height: 0.5rem;
 	margin-top: 0.5rem;
-	border-radius: 0.5rem;
-	background: #2197f1;
-	color: #FFFFFF;
-	font-size: 0.18rem;
 }
 .relation{
 	margin-bottom: 0.7rem;
@@ -222,9 +213,6 @@
 .ins-box{
 	margin-left: -0.22rem;
 }
-.industry-w .ins-list{
-	color: #FFFFFF;
-}
 .ins-list{
 	float: left;
 	width: 25%;
@@ -232,23 +220,19 @@
 	color: #666666;
 	font-size: 0.18rem;
 	margin: 0.4rem  0;
+	cursor: pointer;
+}
+.industry-w .ins-list{
+	color: #FFFFFF;
 }
 .ins-list:nth-child(4n){
 	margin-right: 0;
 }
+.ins-list:hover{
+	transform: scale(1.1);
+}
 .ins-list img{
 	height: 0.4rem;
-}
-.industry-txt a{
-	display: inline-block;
-	width: 1.7rem;
-	height: 0.44rem;
-	line-height: 0.44rem;
-	text-align: center;
-	color: #FFFFFF;
-	font-size: 0.18rem;
-	background: #0092cc;
-	border-radius: 0.44rem;
 }
 .industry-fw{
 	font-size: 0.36rem;
@@ -312,7 +296,116 @@
 	background-repeat: no-repeat;
 }
 
+.button{
+	font:0.18rem Calibri, Arial, sans-serif;
+	/* A semi-transparent text shadow */
+	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+	
+	/* Overriding the default underline styling of the links */
+	text-decoration:none !important;
+	white-space:nowrap;
+	
+	display:inline-block;
+	vertical-align:baseline;
+	position:relative;
+	cursor:pointer;
+	padding:0.1rem 0.3rem;
+	box-sizing: border-box;
+	text-align: center;
+	background-repeat:no-repeat;
 
+	/* The following two rules are fallbacks, in case
+	   the browser does not support multiple backgrounds. */
+
+	background-image:url('../images/button_bg.png');
+	
+	/* Multiple backgrounds version. The background images
+	   are defined individually in color classes */
+	
+	background-position:bottom left, top right, 0 0, 0 0;
+	background-clip:border-box;
+	
+	/* Applying a default border raidus of 8px */
+	
+	border-radius:4em;
+	
+	/* A 1px highlight inside of the button */
+	
+	-moz-box-shadow:0 0 1px #fff inset;
+	-webkit-box-shadow:0 0 1px #fff inset;
+	box-shadow:0 0 1px #fff inset;
+	
+	/* Animating the background positions with CSS3 */
+	/* Currently works only in Safari/Chrome */
+	
+	-webkit-transition:background-position 1s;
+	-moz-transition:background-position 1s;
+	transition:background-position 1s;
+}
+
+.button:hover{
+	
+	/* The first rule is a fallback, in case the browser
+	   does not support multiple backgrounds
+	*/
+	
+	background-position:top left;
+	background-position:top left, bottom right, 0 0, 0 0;
+}
+
+.button:active{
+	/* Moving the button 1px to the bottom when clicked */
+	bottom:-1px;
+}
+
+/* A more rounded button */
+
+.button.rounded{
+	-moz-border-radius:4em;
+	-webkit-border-radius:4em;
+	border-radius:4em;
+}
+
+
+/* Defining four button colors */
+
+
+/* BlueButton */
+
+.blue.button{
+	color:#FFFFFF !important;
+	
+	border:1px solid #84acc3 !important;
+	
+	/* A fallback background color */
+	background-color: #48b5f2;
+	box-shadow: 0 0 5px #5989f4;
+	/* Specifying a version with gradients according to */
+	
+	background-image:	url('../images/button_bg.png'), url('../images/button_bg.png'),
+						-moz-radial-gradient(	center bottom, circle,
+												rgba(89, 137, 244,1) 0,rgba(89,208,244,0) 100px),
+						-moz-linear-gradient(#5989f4, #3faeeb);
+
+	background-image:	url('../images/button_bg.png'), url('../images/button_bg.png'),
+						-webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
+											from(rgba(89, 137, 244,1)), to(rgba(89,208,244,0))),
+						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5989f4), to(#3faeeb));
+}
+
+.blue.button:hover{
+	background-color:#63c7fe;
+	
+	background-image:	url('../images/button_bg.png'), url('../images/button_bg.png'),
+						-moz-radial-gradient(	center bottom, circle,
+												rgba(89, 137, 244,1) 0,rgba(89, 137, 244,0) 100px),
+						-moz-linear-gradient(#5989f4, #58bef7);
+						
+	background-image:	url('../images/button_bg.png'), url('../images/button_bg.png'),
+						-webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
+											from(rgba(89, 137, 244,1)), to(rgba(89, 137, 244,0))),
+						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5989f4), to(#58bef7));
+}
 
 
 
@@ -351,7 +444,7 @@
 		flex-wrap:wrap;
 	}
 	.industry-list{
-		width: 1.7rem;
+		width: 1.9rem;
 	}
 	.industry-txt{
 		width: 100%;
@@ -363,13 +456,11 @@
 	}
 	.industry-btm{
 		width: 90%;
+		flex-wrap: wrap;
+		margin-bottom: 0.4rem;
 	}
 	.insBtm-img:nth-child(6){
 		display: none;
-	}
-	.industry-btm{
-		flex-wrap: wrap;
-		margin-bottom: 0.4rem;
 	}
 	.insBtm-list{
 		width: 18%;
