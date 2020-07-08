@@ -687,6 +687,10 @@
     .banner .font p{
         line-height: 26px;
     }
+    .swiper-container-horizontal{
+        margin: 0 5%;
+        width: 90%;
+    }
     .banner-box{ height: 12rem;}
     .bannerBox .swiper-slide p{line-height: 0.4rem;}
     .banner-font{height: 4rem;}
