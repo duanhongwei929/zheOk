@@ -231,42 +231,60 @@
 
 <script src="js/up.js"></script>
 <script>
-/*
-    var mySwiper = new Swiper('.swiper-container', {
-        autoplay: 2000,//可选选项，自动滑动
-        loop:true,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    })
 
-
-*/
-
+    //定义变量获取屏幕视口宽度
+    var windowWidth = $(window).width();
+    if(windowWidth < 640){
+        window.onload = function() {
+            var swiper = new Swiper('.swiper-container',{
+                autoplay: 3000, //是否自动滚动
+                speed: 500,      //滚动速速
+                autoplayDisableOnInteraction: true,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 1, //当前选中
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev', // 左右切换
+                nextButton: '.swiper-button-next', // 左右切换
+                onInit: function(swiper) {
+                    swiper.slides[1].className = "swiper-slide swiper-slide-active"; //当前选中 状态
+                },
+                breakpoints: {
+                    100: {
+                        slidesPerView: 0,
+                    }
+                }
+            });
+        }
+    }
+    if(windowWidth >= 640){
+        window.onload = function() {
+            var swiper = new Swiper('.swiper-container',{
+                autoplay: 3000, //是否自动滚动
+                speed: 500,      //滚动速速
+                autoplayDisableOnInteraction: true,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 5, //当前选中
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev', // 左右切换
+                nextButton: '.swiper-button-next', // 左右切换
+                onInit: function(swiper) {
+                    swiper.slides[1].className = "swiper-slide swiper-slide-active"; //当前选中 状态
+                },
+                breakpoints: {
+                    100: {
+                        slidesPerView: 0,
+                    }
+                }
+            });
+        }
+    }
 
     /* banner pc */
-    window.onload = function() {
-        var swiper = new Swiper('.swiper-container',{
-            autoplay: 3000, //是否自动滚动
-            speed: 500,      //滚动速速
-            autoplayDisableOnInteraction: true,
-            loop: true,
-            centeredSlides: true,
-            slidesPerView: 5, //当前选中
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            prevButton: '.swiper-button-prev', // 左右切换
-            nextButton: '.swiper-button-next', // 左右切换
-            onInit: function(swiper) {
-                swiper.slides[1].className = "swiper-slide swiper-slide-active"; //当前选中 状态
-            },
-            breakpoints: {
-                100: {
-                    slidesPerView: 0,
-                }
-            }
-        });
-    }
+
 
 
 </script>
