@@ -19,10 +19,14 @@
     margin-top: 0.2rem;
 }
 .banner .font-img{
+    position: relative;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.banner .font-img img{
+    position: absolute;
 }
 @keyframes bounce{
     30%{
@@ -108,7 +112,12 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.aboutMe .font-img li img:hover{
+    background: rgba(0,248,255,0.2);
+    /*background-image:linear-gradient(#fff, #fff);*/
+    /*background-blend-mode: lighten;*/
+    border-radius: 50%;
+}
 /* banner */
 .bannerBox{
     background: #3a445c url("../images/banner-back.jpg") no-repeat;
@@ -348,6 +357,19 @@
         transform: translateY(0);
     }
 }
+/*
+@keyframes up{
+    0%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}*/
+
 .bannerIcon{ animation:bounce 1s; }
 .bannerIcon2{ animation:bounce 1.5s; }
 .bannerIcon3{ animation:bounce 2s; }
@@ -723,7 +745,6 @@
 
 
 /*  */
-
 
 
 

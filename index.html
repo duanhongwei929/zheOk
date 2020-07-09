@@ -175,7 +175,7 @@
     <h1 class="title">技术体系</h1>
     <section class=" technology-box offset" data-x id="technology">
         <div style="margin-left: 1rem">
-            <h1>技术体系</h1>
+            <!--<h1>技术体系</h1>-->
             <ol class="technology-font" start="1">
                 <li>JAVA、C#、HTML、VUE、CSS3</li>
                 <li>MYSQL/SQLSERVER/RDS等、REDIS、CLOUD、MQ、RESTFULL-API</li>
@@ -208,9 +208,10 @@
 <div class="aboutMe">
     <div class="content offset" id="aboutMe" data-x>
         <h1 class="title" style="margin-bottom: 0.5rem">优势服务</h1>
+        <p style="font-size: 0.22rem;">中国领先的高端网站设计和移动应用开始服务商</p>
         <p>哲欧凯（北京哲欧凯科技有限公司），是一家专业从事软件开发、网络应用开发、网站设计开发、互联网运营服务的专业技术公司。公司主要骨干从事技术开发业务近13年，凭借专业资深的需求咨询、优秀项目实施与管理及完善的技术服务，哲欧凯与多家大型IT企业建立渠道、技术外包合作关系。
-        <p>我们专注于品牌高端网站和移动应用开发。通过设计、传达和创新来加强企业的品牌效应，致力于解决企业在互联网和移动端的统一呈现以及企业产品的网络互动传播应用，勇敢的为哲欧凯科技走出实践者的第一步</p>
-        <p>为企业客户量身定制专属电子商务、网络营销、企业信息化、网站管理与应用等相关知识培训，帮助客户学习掌握开展各类应用色使用、维护、推广等相关知识技能，全面推动客户的信息化应用管理水平</p></p>
+        <p>我们专注于品牌高端网站和移动应用开发。通过设计、传达和创新来加强企业的品牌效应，致力于解决企业在互联网和移动端的统一呈现以及企业产品的网络互动传播应用，勇敢的为哲欧凯科技走出实践者的第一步。</p>
+        <p>为企业客户量身定制专属电子商务、网络营销、企业信息化、网站管理与应用等相关知识培训，帮助客户学习掌握开展各类应用色使用、维护、推广等相关知识技能，全面推动客户的信息化应用管理水平。</p>
         <ul class="font-img">
             <li><img src="images/aboutMe1.png" alt=""></li>
             <li><img src="images/aboutMe2.png" alt=""></li>
@@ -232,6 +233,13 @@
 <script src="js/up.js"></script>
 <script>
 
+
+    $(".banner img").mouseover(function(){
+        $(this).stop().animate({top:"30px"});
+    });
+    $(".banner img").mouseout(function(){
+        $(this).stop().animate({top:"0px"});
+    });
     //定义变量获取屏幕视口宽度
     var windowWidth = $(window).width();
     if(windowWidth < 640){
