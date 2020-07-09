@@ -2,6 +2,17 @@
 	font-size: 0.32rem;
 	text-align: center;
 	padding: 1rem 0;
+	position: relative;
+}
+.about-tit:after{
+	content: '';
+	display: block;
+	width: 0.34rem;
+	height: 0.03rem;
+	background: #00f8ff;
+	letter-spacing: 0.05rem;
+	margin: 0px auto;
+	margin-top: 0.2rem;
 }
 .pc-width{
 	width: 1200px;
@@ -79,10 +90,22 @@
 	font-size: 0.32rem;
 	text-align: center;
 }
+.us-tit:after{
+	content: '';
+	display: block;
+	width: 0.34rem;
+	height: 0.03rem;
+	background: #00f8ff;
+	letter-spacing: 0.05rem;
+	margin: 0px auto;
+	margin-top: 0.2rem;
+}
 .us-txt{
 	text-align: center;
 	margin: 0.6rem auto;
 	width: 1000px;
+	font-size: 0.18rem;
+	text-indent: 0.36rem;
 }
 .us-down{
 	width: 0.24rem;
@@ -286,7 +309,12 @@
 	background-image: url(../images/industry-banner.png);
 }
 .about-banner{
-	background-image: url(../images/about-banner.png);
+	height: 6rem;
+	width: 100%;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/about-banner.jpg);
 }
 .qBanner{
 	height: 4rem;
@@ -468,5 +496,8 @@
 	}
 	.goTop{
 		display: none !important;
+	}
+	.about-banner{
+		height: 4rem;
 	}
 }
