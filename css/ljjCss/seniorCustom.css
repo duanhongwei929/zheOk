@@ -196,7 +196,7 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     .two .center {
         position: relative;
         top: 0;
-        left: -83px;
+        left: 0;
         font-size: 20px;
         padding: 10px 20px;
         margin-left: 0;
