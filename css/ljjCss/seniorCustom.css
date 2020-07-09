@@ -241,7 +241,7 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     .maxShow .btn {
         margin-top: 0;
         position: absolute;
-        top: 35%;
+        top: 44%;
         transform: translateY(-50%);
         background: #ffffffd9;
         padding: 2px;
