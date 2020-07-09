@@ -16,7 +16,7 @@
 /*----------------------------*/
 .nav{
     height: 0.8rem;
-    background: rgba(10,17,43,0.8);
+	background: rgba(9,18,43,0.9);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,15 +34,20 @@
     align-items: center;
 }
 .nav .phone{
-    width: 10%;
+    width: 11%;
     color: #fff;
+	font-size: 0.18rem;
     padding-left: 0.3rem;
-    background: url("../images/phone.png") no-repeat;
+	margin-left: 0.2rem;
+    background: url("../images/phone.png") left center no-repeat;
     background-size: 0.2rem;
+
 }
 .nav ul{
     width: 50%;
     height: 0.8rem;
+	font-size: 0.15rem;
+	letter-spacing: 1px;
     display: flex;
     justify-content: space-around;
     align-items: center;

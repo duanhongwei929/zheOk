@@ -48,8 +48,11 @@
 	margin: 0.4rem 0 0.05rem;
 }
 .type-list p{
+	margin: 0.1rem auto 0;
+	width: 2.3rem;
 	font-size: 0.14rem;
-	line-height: 0.28rem;
+	line-height: 0.24rem;
+	text-align: justify;
 }
 .type-list:hover .list1{
 	display: none;
@@ -314,9 +317,9 @@
 	background-image: url(../images/industry-banner.png);
 }
 .about-banner{
-	height: 6rem;
+	height:5rem;
 	width: 100%;
-	background-position: top center;
+	background-position:center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(../images/about-banner.jpg);
