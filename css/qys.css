@@ -162,7 +162,12 @@
 }
 .relation-r{
 	width: 55%;
+	height: 5rem;
 	margin-bottom: 0.7rem;
+}
+.relation-r iframe{
+	width: 100%;
+	height: 100%;
 }
 /* 行业方案 */
 .industry-nav{
@@ -466,6 +471,11 @@
 	.relation-l,.relation-r{
 		width: 90%;
 		margin-left: 5%;
+		float: left;
+	}
+	#map{
+		width: 100%;
+		height: 6rem;
 	}
 	.industry-nav{
 		height: 2rem;
