@@ -10,7 +10,7 @@ document.writeln("            <li><a href='mobile.html'>移动应用</a></li>");
 document.writeln("            <li><a href='industry.html'>行业方案</a></li>");
 document.writeln("            <li><a href='about.html'>关于我们</a></li>");
 document.writeln("        </ul>");
-document.writeln("        <div class=\'phone\'>4001161011</div>");
+document.writeln("        <div class=\'phone\'>400-116-1011</div>");
 document.writeln("    </div>");
 document.writeln("</div>");
 document.writeln("<div class=\'phoneNav\'>");
