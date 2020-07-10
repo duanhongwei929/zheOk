@@ -26,7 +26,9 @@ document.writeln("			<li><a href=\'industry.html\'>行业方案</a></li>");
 document.writeln("			<li><a href=\'about.html\'>关于我们</a></li>");
 document.writeln("		</ul>");
 document.write("<!--[if lte IE 9]>");
-document.write("  <script>if (!\/update\.htm\/.test(location.href)) window.location = '\/\/support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads'; <\/script>");
+document.write(
+	"  <script>if (!\/update\.htm\/.test(location.href)) window.location = '\/\/support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads'; <\/script>"
+);
 document.write("<![endif]-->");
 $(document).ready(function() {
 	$(".nav-box li a").each(function() {
@@ -36,7 +38,7 @@ $(document).ready(function() {
 		}
 	});
 });
-$('.phoneNav').click(function(){
+$('.phoneNav').click(function() {
 	$('.mb').slideToggle();
 	$('.phoneNav-box').slideToggle(500);
 })
