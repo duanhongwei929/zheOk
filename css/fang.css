@@ -3,6 +3,7 @@
 	height: 4.03rem;
 	background: url(../images/fang_img/mobile_banner.jpg) no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 .pageMain {

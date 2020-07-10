@@ -453,6 +453,16 @@
 	}
 	.type-list{
 		width: 3.15rem;
+		height: 5rem;
+	}
+	.type-list p{
+		font-size: 0.24rem;
+		text-indent: 0.24rem;
+		line-height: 0.36rem;
+		width: 100%;
+	}
+	.type-list div{
+		font-size: 0.24rem;
 	}
 	.content{
 		display: none;
@@ -462,15 +472,25 @@
 		padding: 0 15px;
 		box-sizing: border-box;
 		color: #9e9a9a;
+		font-size: 0.24rem;
+		text-indent: 0.48rem;
+		text-align: justify;
 	}
 	.usList{
 		width: 90%;
 		margin-left: 5%;
 		color: #FFFFFF;
 	}
+	.usList p,.relation-l p,.industry-txt p,.insBtm-list p{
+		font-size: 0.24rem;
+	}
+	.usList a{
+		font-size: 0.24rem;
+	}
 	.us-list2 img{
 		margin-top: 0.36rem;
 	}
+	.industry-txt .industry-tit{font-size: 0.28rem;}
 	.relation-l,.relation-r{
 		width: 90%;
 		margin-left: 5%;
@@ -486,6 +506,7 @@
 	}
 	.industry-list{
 		width: 1.9rem;
+		font-size: 0.24rem;
 	}
 	.industry-txt{
 		width: 100%;
@@ -512,5 +533,6 @@
 	}
 	.about-banner{
 		height: 4rem;
+		background-size: 140% 100%;
 	}
 }
