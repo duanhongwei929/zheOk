@@ -16,22 +16,19 @@
 <script src="nav.js"></script>
 <div>
     <div>
-        <img src="./images/ljjImg/one.png" class="m-width">
+        <img src="./images/ljjImg/oneBimg.png" class="m-width">
+        <div class="borderTL"></div>
+        <div class="borderRB"></div>
     </div>
     <div class="two">
         <img src="./images/ljjImg/twoBimg.png" class="twoB">
-        <div class="twoT">
-<!--            <img src="./images/ljjImg/twoText1.png" alt="">-->
-            <div class="twoText">
-                <div class="center">
-                    <div class="clearfix twoTitle">
-                        网站设计
-                        <div class="borderL"></div>
-                    </div>
-                    <div class="text">
-                        在建设中运用多媒体交互技术对企业品牌进行展示演绎，以此更好的展现品牌的特色和形象。相应的网站整体在提供良好用户体验的基础上偏向于设计，更多的以独特创意的视觉效果强调品牌的特色，在此基础上提升品牌的影响力和营销力。品牌形象展示网站开发是以品牌的发展方向为核心构建，此类网站建设是以传播企业及品牌形象为主要目的，在整体实施过程当中，要根据原有的品牌价值核心与网络媒体的展现方式结合起来。
-                    </div>
-                </div>
+        <div class="center">
+            <div class="clearfix twoTitle">
+                网站设计
+                <div class="borderL"></div>
+            </div>
+            <div class="text">
+                在建设中运用多媒体交互技术对企业品牌进行展示演绎，以此更好的展现品牌的特色和形象。相应的网站整体在提供良好用户体验的基础上偏向于设计，更多的以独特创意的视觉效果强调品牌的特色，在此基础上提升品牌的影响力和营销力。品牌形象展示网站开发是以品牌的发展方向为核心构建，此类网站建设是以传播企业及品牌形象为主要目的，在整体实施过程当中，要根据原有的品牌价值核心与网络媒体的展现方式结合起来。
             </div>
         </div>
     </div>
@@ -106,6 +103,7 @@
         $('.caseText').text($(this).attr('title'));
         $('.maxShow .m20 .maxImg>img').attr('src', $(this).attr('value'));
     });
+
     function leftBtn() {
         let a = $('.maxShow .m20 .maxImg>img').attr('src');
         $('.minImg>li').removeClass('active');
@@ -131,6 +129,7 @@
             $('.caseText').text('响应式');
         }
     };
+
     function rightBtn() {
         let a = $('.maxShow .m20 .maxImg>img').attr('src');
         console.log(a);

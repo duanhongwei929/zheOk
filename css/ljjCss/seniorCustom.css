@@ -8,6 +8,13 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 .m-width {
     width: 100%;
 }
+.borderTL {
+    /*border-top: .3rem solid #fff;*/
+    /*border-top: .3rem solid #fff;*/
+}
+.borderRB {
+
+}
 .two {
     background-color: #09122b;
     position: relative;
@@ -41,14 +48,14 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 }
 .two .center {
     position: absolute;
-    top: 1.5rem;
-    right: 0;
+    top: 30%;
+    left: 54%;
     font-size: 28px;
     color: rgb(9, 18, 43);
 }
 .two .text {
     font-size: 16px;
-    width: 6rem;
+    width: 100%;
     letter-spacing: 2px;
     line-height: 28px;
 }
@@ -196,7 +203,7 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     .two .center {
         position: relative;
         top: 0;
-        left: -83px;
+        left: 0;
         font-size: 20px;
         padding: 10px 20px;
         margin-left: 0;
@@ -241,7 +248,7 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     .maxShow .btn {
         margin-top: 0;
         position: absolute;
-        top: 35%;
+        top: 44%;
         transform: translateY(-50%);
         background: #ffffffd9;
         padding: 2px;
