@@ -1,9 +1,19 @@
 
 /*---------------------------------*/
+.index-top{
+	width: 100%;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 99;
+}
 .banner{
     width:100%;
-    height: 8.55rem;
-    background: url("../images/banner.jpg") no-repeat;
+    /* height: 8.55rem; */
+    background: url("../images/banner.png") no-repeat;
+	position: relative;
+	background-size: cover;
 }
 .banner .font{
     color: #fff;
@@ -19,14 +29,11 @@
     margin-top: 0.2rem;
 }
 .banner .font-img{
-    position: relative;
-    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.banner .font-img img{
-    position: absolute;
+	width: 12rem;
+	margin: 2rem auto 0;
 }
 @keyframes bounce{
     30%{
@@ -105,6 +112,11 @@
     text-align: center;
     line-height: 0.3rem;
     margin-bottom: 0.2rem;
+	text-align: justify;
+	text-indent: 0.32rem;
+}
+.aboutMe .comp-first{
+	text-align: center !important;
 }
 .aboutMe .font-img{
     margin-top: 1rem;
@@ -703,26 +715,33 @@
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0)
 }
-
+.comp-first{
+	font-size: 0.22rem;
+}
 /*-----------------------------------------*/
 @media screen and (max-width: 768px){
     .banner .font p{
         line-height: 26px;
+		font-size: 14px;
+		padding: 0 0.2rem;
+		margin-top: 0.1rem;
     }
     .swiper-container-horizontal{
         margin: 0 5%;
         width: 90%;
     }
+	video{display: none;}
+	.title{padding-top: 0.5rem;}
     .banner-box{ height: 12rem;}
     .bannerBox .swiper-slide p{line-height: 0.4rem;}
     .banner-font{height: 4rem;}
     .banner-but{ line-height: 0.5rem;}
     .bannerBox .banner-font h1{ margin-bottom: 0.2rem;}
     .swiper-button-next, .swiper-button-prev{top: 25% !important;}
-    .content{ width: 90%;margin: 0 5%;}
-    .banner{ height: 12.5rem; }
-    .banner .font-img{ width: 80%; margin: 1rem 10% 0; flex-wrap: wrap;margin-top: 1rem;}
-    .banner .font-img img{ width: 130px;}
+    .content{ width: 100%;}
+    .banner{ height: 6rem; }
+    .banner .font-img{ width: 100%; padding: 0 0.2rem; flex-wrap: wrap;margin-top: 0.5rem;box-sizing: border-box;}
+    .banner .font-img img{ width: 1.4rem;}
     .banner .font-img img:nth-child(1),.banner .font-img img:nth-child(2){margin-bottom: 1rem;}
     .technology{padding-right: 0;height: 11.6rem;}
     .technology-box{ padding-left: 0; flex-wrap: wrap;}
@@ -731,15 +750,18 @@
     .technology-box img{width: 100%; margin-top: 1rem;}
     .technology-font{ width: 90%; margin:0 5%;}
     .technology-box>div{margin-left: 0.5rem !important;}
-    .serverBox .bottom{ width: 100%; position: absolute; top: 140px; text-align: center; margin-left: 0; left: 0}
+	.server{height: 6.5rem;}
+    .serverBox .bottom{ width: 100%; position: absolute; top: 1.4rem; text-align: center; margin-left: 0; left: 0}
 /*    .serverBox .bottom img{
         margin-right: 0!important;
         width: 90%;
     }*/
-    .aboutMe{ height:100%; padding-bottom: 1rem;}
+    .aboutMe{ height:100%; padding: 0 0.3rem 1rem;box-sizing: border-box;}
     .aboutMe .font-img{flex-wrap: wrap;}
     .aboutMe .font-img img{width: 2rem}
     .aboutMe .font-img li:nth-child(1),.aboutMe .font-img li:nth-child(2),.aboutMe .font-img li:nth-child(3){ margin-bottom: 0.5rem; }
+	.aboutMe p{font-size: 0.26rem;text-align: justify;text-indent: 0.52rem;line-height: 0.32rem;}
+	.comp-first{font-size: 0.26rem;text-align: center !important;}
 }
 
 

@@ -6,9 +6,7 @@
     for(let i =0;i<specialTags.length; i++){
         specialTags[i].classList.add('offset')
     }
-    console.log('ccc')
     findClosestAndRemoveOffset()
-    console.log('bbb')
     window.addEventListener('scroll', function(x){
         findClosestAndRemoveOffset()
     })
