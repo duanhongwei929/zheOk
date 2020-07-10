@@ -8,6 +8,13 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 .m-width {
     width: 100%;
 }
+.borderTL {
+    /*border-top: .3rem solid #fff;*/
+    /*border-top: .3rem solid #fff;*/
+}
+.borderRB {
+
+}
 .two {
     background-color: #09122b;
     position: relative;
