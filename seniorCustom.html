@@ -15,7 +15,7 @@
 <body>
 <script src="nav.js"></script>
 <div>
-    <div>
+    <div style="position: relative;">
         <img src="./images/ljjImg/oneBimg.png" class="m-width">
         <div class="borderTL"></div>
         <div class="borderRB"></div>
@@ -83,8 +83,14 @@
             </li>
         </ul>
     </div>
-    <div>
+    <div class="wrapper">
         <img src="./images/ljjImg/four.png" class="m-width">
+        <div class="activeBox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
     <div class="five">
         <img src="./images/ljjImg/five.png" class="m-width">
@@ -97,7 +103,13 @@
 </div>
 <script src="footer.js"></script>
 <script>
-
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 2000) {//这里100代表你要动画的元素离最顶层的距离，console.log一下就知道了。
+            $('.minImg').addClass('active');
+        } else {
+            $('.minImg').removeClass('active');
+        }
+    });
     $('.minImg>li').click(function (e) {
         $(this).addClass('active').siblings().removeClass('active');
         $('.caseText').text($(this).attr('title'));

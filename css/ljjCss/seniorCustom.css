@@ -9,11 +9,49 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
     width: 100%;
 }
 .borderTL {
-    /*border-top: .3rem solid #fff;*/
-    /*border-top: .3rem solid #fff;*/
+    width: .15rem;
+    height: .15rem;
+    border-top: 1px solid #a8d7eb;
+    border-left: 1px solid #a8d7eb;
+    position: absolute;
+    top: 46%;
+    left: 7%;
+    animation: fade 600ms infinite;
+    -webkit-animation: fade 600ms infinite;
 }
 .borderRB {
+    width: .15rem;
+    height: .15rem;
+    border-bottom: 1px solid #a8d7eb;
+    border-right: 1px solid #a8d7eb;
+    position: absolute;
+    top: 63%;
+    left: 22%;
+    animation: fade 600ms infinite;
+    -webkit-animation: fade 600ms infinite;
+}
+@keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
 
+@-webkit-keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
 }
 .two {
     background-color: #09122b;
@@ -178,6 +216,98 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
 }
 .app {
     display: none;
+}
+.wrapper {
+    position:relative;
+}
+.activeBox {
+    width: 42%;
+    height: 16%;
+    position: absolute;
+    top: 25%;
+    left: 17.2%;
+    /*border: 1px solid #a8d7eb;*/
+    overflow: hidden;
+}
+.activeBox span:nth-child(1) {
+    height: 3px;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(to right, rgba(0,0,0,0), #00f8ff);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes span1{
+    0%{
+        left:-100%
+    }
+    100%{
+        left:100%;
+    }
+}
+.activeBox span:nth-child(2) {
+    height: 100%;
+    width: 3px;
+    top: -100%;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #00f8ff);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 3s linear infinite;
+    animation-delay: 2.5s;
+}
+@keyframes span2{
+    0%{
+        top:-100%;
+    }
+    100%{
+        top:100%;
+    }
+}
+.activeBox span:nth-child(3) {
+    height: 3px;
+    width: 100%;
+    right: -100%;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0), #00f8ff);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes span3{
+    0%{
+        right:-100%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.activeBox span:nth-child(4) {
+    height: 100%;
+    width: 3px;
+    bottom: -100%;
+    left: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0), #00f8ff);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 3s linear infinite;
+    animation-delay: 2.5s;
+}
+@keyframes span4{
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom:100%;
+    }
+}
+.activeBox span {
+    position: absolute;
+    display: block;
 }
 @media screen and (max-width: 768px) {
     body > div {
